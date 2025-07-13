@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulasi Mesin Pengering Padi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Kontrol Mesin Pengering Padi</h1>
+
+  <div class="kontrol-panel">
+    <button onclick="toggleMesin('mesin')">ON/OFF Mesin</button>
+    <button onclick="toggleMesin('ayakan')">ON/OFF Ayakan</button>
+    <button onclick="toggleMesin('tungku')">ON/OFF Tungku</button>
+    <button onclick="toggleMesin('lift')">ON/OFF Lift Padi</button>
+    <button onclick="toggleMesin('scam')">ON/OFF SCAM Padi</button>
+  </div>
+
+  <div class="status">
+    <p>Mesin: <span id="mesin">OFF</span></p>
+    <p>Ayakan: <span id="ayakan">OFF</span></p>
+    <p>Tungku: <span id="tungku">OFF</span></p>
+    <p>Lift: <span id="lift">OFF</span></p>
+    <p>Scam: <span id="scam">OFF</span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
