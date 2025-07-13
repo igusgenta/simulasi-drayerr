@@ -20,3 +20,11 @@ function simulateMonitoring() {
 }
 
 setInterval(simulateMonitoring, 3000);
+function toggleMesin(id) {
+    const status = document.getElementById(id);
+    if (status.innerText === "OFF") {
+        status.innerText = "ON";
+    } else {
+        status.innerText = "OFF";
+    }
+}
